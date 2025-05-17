@@ -237,7 +237,7 @@ pub fn switch_next(&self, context: &mut ProcessContext) -> ProcessId {
         // FIXME: alloc new stack for process
         let entry = VirtAddr::new(elf.header.pt2.entry_point());
         proc.write()
-            .init_stack_frame(entry, stack_top);
+            .init_stack_frame(entry, VirtAddr::new(STACK_INIT_TOP));
         // FIXME: mark process as ready
         proc.write().pause();
 
