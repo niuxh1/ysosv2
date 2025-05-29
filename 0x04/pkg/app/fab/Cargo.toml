@@ -1,0 +1,8 @@
+[package]
+name = "ysos_fab"
+version.workspace = true
+edition.workspace = true
+
+
+[dependencies]
+lib = { workspace = true }
