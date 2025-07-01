@@ -1,0 +1,13 @@
+[package]
+name = "yslib"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+linked_list_allocator.workspace = true
+syscall_def={workspace = true}
+
+[features]
+default = ["brk_alloc"]
+brk_alloc = []
+kernel_alloc = []
