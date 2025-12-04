@@ -1,7 +1,0 @@
-[package]
-name = "ysos_md"
-version.workspace = true
-edition.workspace = true
-
-[dependencies]
-lib = { workspace = true }
